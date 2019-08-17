@@ -6,10 +6,10 @@ import (
 )
 
 type List struct {
-	HabitList []struct {
-		Time string   `json:"time"`
-		List []string `json:"list"`
-	} `json:"habitList"`
+	HabitLists []struct {
+		Time  string   `json:"time"`
+		Lists []string `json:"lists"`
+	} `json:"habitLists"`
 }
 
 func (l *List) LoadListFile(file string) error {
